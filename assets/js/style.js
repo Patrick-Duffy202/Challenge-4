@@ -104,6 +104,7 @@ function iterate(id) {
     if (start) {
         iterate("0");
     }
+    
     var timeleft = 30;
     var downloadTimer = setInterval(function(){
     if(timeleft <= 0){
@@ -124,6 +125,8 @@ function iterate(id) {
             id++;
             iterate(id);
             console.log(id);
+        } else {
+            window.alert("Great job on the quiz, smarty!")
         }
     })
 
